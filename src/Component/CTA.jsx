@@ -7,7 +7,7 @@ export default function CTA(){
         <div className={styles.ctacontent}>
           <h2 className={styles.ctatitle}>Start Your Heart Risk Assessment Now!</h2>
           <p className={styles.ctasubtitle}>Take the first step towards a healthier heart and a longer life.</p>
-          <button size="lg" variant="secondary" className={styles.ctabuttonlarge}>
+          <button disabled size="lg" variant="secondary" className={styles.ctabuttonlarge}>
             Get Started
             <ArrowRight className={styles.buttonicon} />
           </button>

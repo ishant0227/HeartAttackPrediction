@@ -1,28 +1,122 @@
+/* Universal Box-Sizing */
+* {
+  box-sizing: border-box;
+}
+
+/* Container */
 .container {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
+
+/* Header Styles */
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 40;
-    width: 100%;
-    border-bottom: 1px solid  #e5e7eb;
-    background-color:  #ffffff;
-  }
-  .header-container {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  width: 100%;
+  border-bottom: 1px solid #e5e7eb;
+  background-color: #ffffff;
+}
+
+/* Header Inner Container */
+.headercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4rem;
+  padding: 0 1rem;
+  flex-wrap: wrap;
+}
+
+/* Logo + Title */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoicon {
+  width: 32px;
+  height: 32px;
+}
+
+.logotext {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Actions Wrapper */
+.navactions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Navigation containers */
+.desktopnav {
+  display: none;
+}
+
+.mobilenav {
+  display: none;
+}
+
+/* Show desktop nav on larger screens */
+@media (min-width: 768px) {
+  .desktopnav {
     display: flex;
+    gap: 1.5rem;
+  }
+
+  .mobilenav {
+    display: none;
+  }
+
+  .headercontainer {
     height: 4rem;
-    align-items: center;
-    justify-content: space-between;
+    padding: 0 2rem;
   }
-    
-  .header-actions {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
+
+  .container {
+    padding: 0 2rem;
   }
-  
-  
+
+  .navactions {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Show mobile nav when toggled */
+.showMobileNav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+  z-index: 50;
+}
+
+/* Small devices */
+@media (max-width: 767px) {
+  .headercontainer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    height: auto;
+  }
+
+  .navactions {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+}

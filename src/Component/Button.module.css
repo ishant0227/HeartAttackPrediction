@@ -1,60 +1,71 @@
 .headeractions {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex: 1;
-    gap: 1rem;
-    padding: 6px;
-  }
-  
-  .loginbtn{
-    border: none;
-    outline: invert;
-    border-radius: 12px;
-    box-shadow: 0 2 2 rgb(0, 0, 0,0.1);
-    text-align: center;
-    font-size: 20px;
-    padding: 5px;
-    background-color: #e11d48;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 10px 10px  rgb(0, 0, 0,0.3);
-    float: left;
-  }
-  .loginbtn:active{
-    background-color: rgb(220, 7, 7);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 1rem;
+  padding: 6px;
+  flex-wrap: wrap;
+}
 
+/* Shared button styles */
+.loginbtn,
+.registerbtn {
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #e11d48;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.loginbtn:hover,
+.registerbtn:hover {
+  background-color: #c00d3f;
+}
+
+.loginbtn:active,
+.registerbtn:active {
+  background-color: rgb(220, 7, 7);
+}
+
+.mobilemenubtn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.menuicon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .headeractions {
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    padding-top: 1rem;
   }
 
+  .loginbtn,
   .registerbtn {
-    border: none;
-    outline: invert;
-    border-radius: 12px;
-    box-shadow: 0 2 2 rgb(0, 0, 0,0.1);
-    text-align: center;
-    font-size: 20px;
-    padding: 5px;
-    background-color: #e11d48;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 10px 10px  rgb(0, 0, 0,0.3);
-    float: left;
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    max-width: 200px;
   }
-  
-  
-  .registerbtn:active{
-    background-color:  rgb(220, 7, 7);
 
-
-  }
   .mobilemenubtn {
     display: inline-flex;
-    background-color: transparent;
-    border: none;
   }
-  
-  .menuicon {
-    height: 1.5rem;
-    width: 1.5rem;
-  }
-  
+}

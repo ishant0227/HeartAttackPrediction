@@ -1,61 +1,88 @@
-
+/* Base styles */
 .container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 2rem;
-  }
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
 .footer {
-    width: 100%;
-    padding: 1.5rem 0;
-    border-top: 1px solid #e5e7eb;
-    background: #ffffff;
-  }
-  
+  width: 100%;
+  padding: 1.5rem 0;
+  border-top: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.footercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.footerlogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  color: #6b7280;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.footernav {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footerlink {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #111827;
+}
+
+.footerlink:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: #6b7280;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
   .footercontainer {
-    display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-  }
-  
-  .footerlogo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .copyright {
-    font-size: 0.875rem;
-    color: #6b7280;
-  }
-  
-  .footernav {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .footerlink {
-    font-size: 0.875rem;
-    font-weight: 500;
-    text-decoration: none;
-    color: #111827;
-  }
-  
-  .footerlink:hover {
-    text-decoration: underline;
-    text-underline-offset: 4px;
-  }
-  
-  .disclaimer {
-    font-size: 0.75rem;
-    color:  #6b7280;
     text-align: center;
     padding: 1rem 0;
   }
-.footercontainer {
-    flex-direction: row;
-    justify-content: space-between;
-    height: 6rem;
+
+  .footerlogo {
+    margin-bottom: 0.5rem;
+    justify-content: center;
   }
+
+  .footernav {
+    justify-content: center;
+  }
+
+  .copyright,
+  .footerlink {
+    font-size: 0.75rem;
+  }
+}

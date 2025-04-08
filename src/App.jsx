@@ -5,6 +5,7 @@ import Form from "./Component/Form";
 import  "./App.css"
 import Register from "./Component/Register";
 import Howitworks from "./Component/How_It_Works";
+import Header from "./Component/Header";
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
     <div >
 
       <BrowserRouter>
+      <Header/>
       <Routes>
       <Route path="/" element={<Landingpage/>} />
       <Route path="/Form" element={<Form />} />

@@ -1,13 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
 .logo {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    font-size: 1.25rem;
-    font-weight: 700;
-  }
-  
-  .logoicon {
-    height: 1.5rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.logoicon {
+  height: 1.5rem;
   width: 1.5rem;
-  color:  #e11d48;
+}
+
+.logotext {
+  white-space: nowrap;
+}
+
+.toggleButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .toggleButton {
+    display: block;
+  }
 }

@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import styles from "../Component/From.module.css"
-import axios from 'axios'
+import ExerciseSection from './ExerciseSection';
+import LifestyleSection from './LifestyleSection';
+
 
 import {addLifestyle} from "../Lifestyle"
 
@@ -63,7 +65,7 @@ export default function HealthAssessmentForm() {
     }else{
       try{
       const resp = await addLifestyle(formData);
-    console.log("Form submitted:", formData)
+    console.log("Form submitted:")
     alert("Form submitted successfully!")
   }catch(error){
     console.log('From not submitted',error);
@@ -189,8 +191,9 @@ export default function HealthAssessmentForm() {
                       id="diet_preference"
                       className={styles.select}
                       onChange={(e) => handleSelectChange("diet_preference", e.target.value)}
-                      defaultValue="vegetarian"
+                      
                     >
+                      <option >Select</option>
                       <option value="vegetarian">Vegetarian</option>
                       <option value="non-vegetarian">Non-Vegetarian</option>
                     </select>
@@ -207,8 +210,9 @@ export default function HealthAssessmentForm() {
                         id="fresh_fruits"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("fresh_fruits", e.target.value)}
-                        defaultValue="weekly"
+                        
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -224,8 +228,9 @@ export default function HealthAssessmentForm() {
                         id="leafy_greens"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("leafy_greens", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -243,8 +248,9 @@ export default function HealthAssessmentForm() {
                         id="other_vegetables"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("other_vegetables", e.target.value)}
-                        defaultValue="weekly"
+                        
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -260,8 +266,9 @@ export default function HealthAssessmentForm() {
                         id="whole_grains"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("whole_grains", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -279,8 +286,9 @@ export default function HealthAssessmentForm() {
                         id="legumes"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("legumes", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -296,8 +304,9 @@ export default function HealthAssessmentForm() {
                         id="nuts_seeds"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("nuts_seeds", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -315,8 +324,9 @@ export default function HealthAssessmentForm() {
                         id="dairy"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("dairy", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -326,14 +336,16 @@ export default function HealthAssessmentForm() {
 
                     <div className={styles.formField}>
                       <label htmlFor="healthy_oils" className={styles.label}>
-                        Healthy oils (olive oil, mustard oil, coconut oil)
+                        Healthy oils (Soyabean oil, Sunflower oil, coconut oil etc)
+                        *NOT REUSED
                       </label>
                       <select
                         id="healthy_oils"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("healthy_oils", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -353,8 +365,9 @@ export default function HealthAssessmentForm() {
                         id="sugary_foods"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("sugary_foods", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -370,8 +383,9 @@ export default function HealthAssessmentForm() {
                         id="processed_foods"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("processed_foods", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -389,8 +403,9 @@ export default function HealthAssessmentForm() {
                         id="high_salt_foods"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("high_salt_foods", e.target.value)}
-                        defaultValue="weekly"
+                         
                       >
+                        <option >Select</option>
                         <option value="daily">Daily</option>
                         <option value="weekly">Weekly</option>
                         <option value="rarely">Rarely</option>
@@ -412,8 +427,9 @@ export default function HealthAssessmentForm() {
                             id="eggs"
                             className={styles.select}
                             onChange={(e) => handleSelectChange("eggs", e.target.value)}
-                            defaultValue="weekly"
+                             
                           >
+                            <option >Select</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="rarely">Rarely</option>
@@ -429,8 +445,9 @@ export default function HealthAssessmentForm() {
                             id="chicken"
                             className={styles.select}
                             onChange={(e) => handleSelectChange("chicken", e.target.value)}
-                            defaultValue="weekly"
+                             
                           >
+                            <option >Select</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="rarely">Rarely</option>
@@ -448,8 +465,9 @@ export default function HealthAssessmentForm() {
                             id="fish"
                             className={styles.select}
                             onChange={(e) => handleSelectChange("fish", e.target.value)}
-                            defaultValue="weekly"
+                             
                           >
+                            <option >Select</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="rarely">Rarely</option>
@@ -469,8 +487,9 @@ export default function HealthAssessmentForm() {
                             id="fried_meat"
                             className={styles.select}
                             onChange={(e) => handleSelectChange("fried_meat", e.target.value)}
-                            defaultValue="weekly"
+                             
                           >
+                            <option >Select</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="rarely">Rarely</option>
@@ -488,8 +507,9 @@ export default function HealthAssessmentForm() {
                             id="processed_meat"
                             className={styles.select}
                             onChange={(e) => handleSelectChange("processed_meat", e.target.value)}
-                            defaultValue="weekly"
+                             
                           >
+                            <option >Select</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="rarely">Rarely</option>
@@ -505,8 +525,9 @@ export default function HealthAssessmentForm() {
                             id="cream_dishes"
                             className={styles.select}
                             onChange={(e) => handleSelectChange("cream_dishes", e.target.value)}
-                            defaultValue="weekly"
+                             
                           >
+                            <option >Select</option>
                             <option value="daily">Daily</option>
                             <option value="weekly">Weekly</option>
                             <option value="rarely">Rarely</option>
@@ -528,9 +549,9 @@ export default function HealthAssessmentForm() {
                         id="food_preparation"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("food_preparation", e.target.value)}
-                        defaultValue="grilled"
+                        
                       >
-
+                        <option >Select</option>
                         <option value="Balanced_diet">Balanced of all</option>
                         <option value="boiled">Mostly boiled/steamed</option>
                         <option value="grilled">Mostly grilled/roasted</option>
@@ -547,8 +568,9 @@ export default function HealthAssessmentForm() {
                         id="eating_out"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("eating_out", e.target.value)}
-                        defaultValue="once_week"
+                        
                       >
+                        <option >Select</option>
                         <option value="more_than_4">More than 4 times a week</option>
                         <option value="2_3_week">2-3 times a week</option>
                         <option value="once_week">Once a week</option>
@@ -565,8 +587,9 @@ export default function HealthAssessmentForm() {
                         id="extra_salt"
                         className={styles.select}
                         onChange={(e) => handleSelectChange("extra_salt", e.target.value)}
-                        defaultValue="occasionally"
+                        
                       >
+                        <option >Select</option>
                         <option value="regularly">Yes, regularly</option>
                         <option value="occasionally">Occasionally</option>
                         <option value="no">No</option>
@@ -579,177 +602,31 @@ export default function HealthAssessmentForm() {
 
             {currentSection === 2 && (
               <div className={styles.section}>
-                <h3 className={styles.sectionTitle}>Exercise & Physical Activity</h3>
-                <hr className={styles.divider} />
-
                 <div className={styles.formGroup}>
                   <div className={styles.formField}>
-                    <label htmlFor="moderate_cardio" className={styles.label}>
-                      How often do you perform moderate-intensity cardio?
-                    </label>
-                    <select
-                      id="moderate_cardio"
-                      className={styles.select}
-                      onChange={(e) => handleSelectChange("moderate_cardio", e.target.value)}
-                      defaultValue="less_than_75"
-                    >
-                      <option value="150_plus">150+ min per week</option>
-                      <option value="75_149">75–149 min per week</option>
-                      <option value="less_than_75">Less than 75 min per week</option>
-                      <option value="never">Never</option>
-                    </select>
-                  </div>
-
-                  <div className={styles.formField}>
-                    <label htmlFor="vigorous_cardio" className={styles.label}>
-                      How often do you perform vigorous-intensity cardio?
-                    </label>
-                    <select
-                      id="vigorous_cardio"
-                      className={styles.select}
-                      onChange={(e) => handleSelectChange("vigorous_cardio", e.target.value)}
-                      defaultValue="less_than_30"
-                    >
-                      <option value="75_plus">75+ min per week</option>
-                      <option value="30_74">30–74 min per week</option>
-                      <option value="less_than_30">Less than 30 min per week</option>
-                      <option value="never">Never</option>
-                    </select>
-                  </div>
-
-                  <div className={styles.formField}>
-                    <label htmlFor="strength_training" className={styles.label}>
-                      How often do you do strength training?
-                    </label>
-                    <select
-                      id="strength_training"
-                      className={styles.select}
-                      onChange={(e) => handleSelectChange("strength_training", e.target.value)}
-                      defaultValue="rarely"
-                    >
-                      <option value="3_plus">3+ times per week</option>
-                      <option value="1_2">1–2 times per week</option>
-                      <option value="rarely">Rarely/Never</option>
-                    </select>
-                  </div>
-
-                  <div className={styles.formField}>
-                    <label htmlFor="non_exercise" className={styles.label}>
-                    Do you engage in non-exercise activities like: (walking,taking stairs,household chores)
-                    </label>
-                    <select
-                      id="non_exercise"
-                      className={styles.select}
-                      onChange={(e) => handleSelectChange("non_exercise", e.target.value)}
-                      defaultValue="yes"
-                    >
-                      <option value="yes">Yes</option>
-                      <option value="No">No</option>
-                    </select>
+                  <ExerciseSection
+                  formData={formData}
+                  handleSelectChange={handleSelectChange}
+                  />
                   </div>
                 </div>
               </div>
             )}
 
             {currentSection === 3 && (
-              <div className={styles.section}>
-                <h3 className={styles.sectionTitle}>Lifestyle & Habits</h3>
-                <hr className={styles.divider} />
-
+              <div className={styles.section}>       
                 <div className={styles.formGroup}>
                   <div className={styles.formRow}>
                     <div className={styles.formField}>
-                      <label htmlFor="work_hours" className={styles.label}>
-                        How many hours do you work per day?
-                      </label>
-                      <input
-                        id="work_hours"
-                        name="work_hours"
-                        type="number"
-                        min="0"
-                        max="24"
-                        placeholder="Hours"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                      />
+                    <LifestyleSection
+                    formData={formData}
+                    handleSelectChange={handleSelectChange}
+                    handleInputChange={handleInputChange}
+                    />
                     </div>
-
-                    <div className={styles.formField}>
-                      <label htmlFor="sleep" className={styles.label}>
-                        How many hours do you sleep?(at night)
-                      </label>
-                      <input
-                        id="sleep"
-                        name="sleep"
-                        type="number"
-                        min="0"
-                        max="24"
-                        placeholder="Hours"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                      />
-                    </div>
-                  </div>
-
-                  <div className={styles.formRow}>
-                    
-                    <div className={styles.formField}>
-                      <label htmlFor="smoke" className={styles.label}>
-                        How much do you smoke in a day?
-                      </label>
-                      <select
-                        id="smoke"
-                        className={styles.select}
-                        onChange={(e) => handleSelectChange("smoke", e.target.value)}
-                        defaultValue="no"
-                      >
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                      </select>
-                    </div>
-                    {formData.smoke==="yes" && (
-                      <>
-                      <div className={styles.formField}>
-                      <label htmlFor="smoke_consume" className={styles.label}>
-                        How much do you smoke in a day?
-                      </label>
-                      <input
-                        id="smoke_consume"
-                        name="smoke_consume"
-                        type="number"
-                        placeholder="Enter the number of consumptions"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                      />
-                      
-                    </div>
-                      </>
-                    )}
-
-                    </div>
-
-
-                    <div className={styles.formRow}>
-                    <div className={styles.formField}>
-                      <label htmlFor="alcohol" className={styles.label}>
-                        Do you consume alcohol?
-                      </label>
-                      <select
-                        id="alcohol"
-                        className={styles.select}
-                        onChange={(e) => handleSelectChange("alcohol", e.target.value)}
-                        defaultValue="never"
-                      >
-                        <option value="daily">Daily</option>
-                        <option value="weekly">Weekly</option>
-                        <option value="occasionally">Occasionally</option>
-                        <option value="never">Never</option>
-
-                      </select>
                     </div>
                   </div>
                 </div>
-              </div>
             )}
 
             <div className={styles.formNavigation}>

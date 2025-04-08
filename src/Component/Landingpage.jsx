@@ -14,8 +14,8 @@ export default function Landingpage(){
 
       <div className={styles.bg}>
             <div className={styles.pagecontainer}>
-            <Header  />
-            <div id=""><Hero/></div> 
+            
+            <div id="hero"><Hero/></div> 
             <div id="how-it-works"><Howitworks/></div>
             <div><Testimonials/></div>
             <CTA/>
