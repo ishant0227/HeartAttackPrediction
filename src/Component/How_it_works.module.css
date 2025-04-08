@@ -1,0 +1,93 @@
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.sectionheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.sectiontitle {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.section-subtitle {
+  color: #6b7280;
+  max-width: 700px;
+}
+
+
+.howitworkssection {
+    width: 100%;
+    padding: 3rem 0;
+    background-color: #ffffff;
+  }
+  
+  .sectionheader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .sectiontitle {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .sectionsubtitle {
+    color: #6b7280;
+    max-width: 700px;
+  }
+  
+  .stepscontainer {
+    display: flex;
+    gap: 1.5rem;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .stepiconcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 9999px;
+    background-color: rgba(225, 29, 72, 0.1);
+  }
+  
+  .stepicon {
+    height: 2rem;
+    width: 2rem;
+    color: #e11d48;
+  }
+  
+  .steptitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+  
+  .stepdescription {
+    color: #6b7280;
+  }

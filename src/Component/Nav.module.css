@@ -1,0 +1,21 @@
+.mainnav {
+    display:inline-flex; 
+    gap: 1.5rem;
+    
+
+  }
+  
+  .navlink {
+    text-decoration: none;
+    color: #111827;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: color 0.2s;
+    
+  
+  }
+  
+  .navlink:hover {
+    color:  #e11d48;
+  }
+  

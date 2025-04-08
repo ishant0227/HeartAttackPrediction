@@ -1,0 +1,19 @@
+.bg {
+  background-image: url("D:\HeartAttackModel\HeartPred\src\assets\Healthy_Heart.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 0%;
+  background-repeat: no-repeat;
+  overflow: auto;
+  
+}
+
+.pagecontainer {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
+  }
+
+  
