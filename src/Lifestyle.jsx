@@ -1,5 +1,5 @@
 import axios from 'axios';
-
+const heart = `65.2.29.15`;
 const URL = 'http://65.2.29.15:8080/api/lifestyle';
 
 //to send data to backend
