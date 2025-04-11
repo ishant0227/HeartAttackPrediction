@@ -1,5 +1,5 @@
 .bg {
-  background-image: url("D:\HeartAttackModel\HeartPred\src\assets\Healthy_Heart.jpeg");
+  background-image: url("../src/assets/Healthy_Heart.jpeg");
   background-size: cover;
   background-position: center;
   height: 100vh;

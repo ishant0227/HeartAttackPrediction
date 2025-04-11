@@ -3,7 +3,7 @@ import styles from "../Component/Nav.module.css";
 
 export default function Nav({ isOpen }) {
   return (
-    <nav className={`${styles.mainnav} ${isOpen ? styles.open : ""}`}>
+    <nav className={`${styles.mainnav} ${isOpen ? styles.open : styles.close}`}>
       <NavLink to="/" className={styles.navlink}>
         Home
       </NavLink>

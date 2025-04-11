@@ -25,5 +25,12 @@
 
   .mainnav.open {
     display: flex;
+    transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
   }
+}
+
+.mainnav.close {
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
 }

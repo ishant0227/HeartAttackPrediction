@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f9f9f9, #e0f7fa);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+.he {
+    color: #00796b;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+.pa {
+    color: #555;
+    font-size: 1.25rem;
+    max-width: 600px;
+  }
+  
+  /* 🔁 Responsive tweaks */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2rem;
+    }
+  
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.6rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  

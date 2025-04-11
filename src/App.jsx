@@ -6,6 +6,7 @@ import  "./App.css"
 import Register from "./Component/Register";
 import Howitworks from "./Component/How_It_Works";
 import Header from "./Component/Header";
+import Thanks from "./Component/Thanks";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
       <Header/>
       <Routes>
+        <Route path="/~thank" element={<Thanks/>}/>
       <Route path="/" element={<Landingpage/>} />
       <Route path="/Form" element={<Form />} />
       <Route path="/login" element={<Register/>}/>

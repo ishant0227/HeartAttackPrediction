@@ -1,21 +1,24 @@
 import { useEffect, useState } from "react"
-import styles from "../Component/From.module.css"
-import ExerciseSection from './ExerciseSection';
-import LifestyleSection from './LifestyleSection';
-
-
 import {addLifestyle} from "../Lifestyle"
-import Diet from "./Diet";
-import Stress from "./Stress";
+import {useNavigate} from "react-router-dom"
+import styles from "../Component/From.module.css"
+import Stress from "../Component/Stress"
+import Diet from "../Component/Diet"
+import ExerciseSection from "../Component/ExerciseSection"
+import LifestyleSection from "../Component/LifestyleSection"
 
 export default function HealthAssessmentForm() {
   const [currentSection, setCurrentSection] = useState(0)
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     diet_preference: "vegetarian",
     weight:"",
     height:"",
     bmi:""
   });
+ 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
 
   useEffect(()=>{
     const h = parseFloat(formData.height);
@@ -61,21 +64,28 @@ export default function HealthAssessmentForm() {
     }
   }
 
-  const handleSubmit = async(e) => {
-    e.preventDefault()
-    if (currentSection < sections.length - 1){
-        nextSection();
-    }else{
-      try{
-      const resp = await addLifestyle(formData);
-    console.log("Form submitted:",formData)
-    alert("Form submitted successfully!")
-  }catch(error){
-    console.log('From not submitted',error);
-    alert("Form not submitted!!!",error)
-  }
-}
-}
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+  
+    if (currentSection < sections.length - 1) {
+      nextSection();
+    } else {
+      try {
+        setIsSubmitting(true); // show loading spinner / disable button
+  
+        const resp = await addLifestyle(formData);
+        console.log("Form submitted:", formData);
+        alert("Form submitted successfully!");
+        navigate("/~thank");
+      } catch (error) {
+        console.error("Form not submitted:", error);
+        alert("Form not submitted!!! Please try again.");
+      } finally {
+        setIsSubmitting(false);
+      }
+    }
+  };
+  
 
   return (
     <div className={styles.container}>
@@ -247,8 +257,17 @@ export default function HealthAssessmentForm() {
                 Previous
               </button>
 
-              <button type="button" className={`${styles.button} ${styles.buttonSubmit}`} onClick={handleSubmit}>
-  {currentSection < sections.length - 1 ? "Next" : "Submit"}
+              <button
+  type="button"
+  className={`${styles.button} ${styles.buttonSubmit}`}
+  onClick={handleSubmit}
+  disabled={isSubmitting} // prevent double submits
+>
+  {isSubmitting
+    ? "Submitting..."
+    : currentSection < sections.length - 1
+    ? "Next"
+    : "Submit"}
 </button>
 
             </div>
