@@ -10,6 +10,8 @@ export default function Header() {
       <div className={styles.container } >
       <div className={styles.headercontainer}>
         <Logo/>
+        <marquee>DISCLAMIR* This tool provides an estimated heart attack risk based on lifestyle and clinical inputs.
+         It does not consider genetic heart conditions or structural issues like heart valve disorders.</marquee>
     </div>
       </div>
     </header>

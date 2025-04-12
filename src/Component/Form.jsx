@@ -123,6 +123,37 @@ export default function HealthAssessmentForm() {
                 <div className={styles.formGroup}>
                   <div className={styles.formRow}>
                     <div className={styles.formField}>
+                    <label htmlFor="name" className={styles.label}>
+                        Enter Your Full Name:
+                      </label>
+                      <input
+                        id="name"
+                        name="name"
+                        type="text"
+                        placeholder="Enter your Full Name"
+                        onChange={handleInputChange}
+                        className={styles.input}
+                        required
+                      />
+                      </div>
+                      <div className={styles.formField}>
+                      <label htmlFor="email" className={styles.label}>
+                        Enter Your Email Address:
+                      </label>
+                      <input
+                        id="email"
+                        name="email"
+                        type="email"
+                        placeholder="Enter your Email"
+                        onChange={handleInputChange}
+                        className={styles.input}
+                        required
+                      />
+                      </div>
+                      </div>
+
+                      <div className={styles.formRow}>
+                      <div className={styles.formField}>
                       <label htmlFor="age" className={styles.label}>
                         What is your age?
                       </label>
@@ -135,7 +166,7 @@ export default function HealthAssessmentForm() {
                         className={styles.input}
                         required
                       />
-                    </div>
+                      </div>
 
                     <div className={styles.formField}>
                       <label htmlFor="weight" className={styles.label}>
