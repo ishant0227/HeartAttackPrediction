@@ -1,4 +1,4 @@
-import heartIcon from "../assets/heart_icon.png";
+import heartIcon from "../../public/assets/heart_icon.png";
 import styles from "../Component/Logo.module.css";
 import Nav from "./Nav";
 import { useState } from "react";

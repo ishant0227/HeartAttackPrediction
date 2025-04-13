@@ -1,4 +1,6 @@
 import { NavLink } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
+
 import styles from "../Component/Nav.module.css";
 
 export default function Nav({ isOpen }) {
@@ -18,16 +20,18 @@ export default function Nav({ isOpen }) {
       >
         About
       </NavLink>
-      <NavLink
+      <HashLink
         to="/how-it-works"
+        
         className={styles.navlink}
         onClick={(e) => {
+          e.preventDefault();
           const section = document.getElementById("how-it-works");
           if (section) section.scrollIntoView({ behavior: "smooth" });
         }}
       >
         How It Works
-      </NavLink>
+      </HashLink>
       <NavLink to="/Survey" className={styles.navlink}>
         Survey
       </NavLink>

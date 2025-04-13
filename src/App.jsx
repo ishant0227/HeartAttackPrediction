@@ -8,6 +8,7 @@ import Howitworks from "./Component/How_It_Works";
 import Header from "./Component/Header";
 import Thanks from "./Component/Thanks";
 import Survey from "./Component/Survey";
+import StepForm from "./Component/test";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
       <Route path="/login" element={<Register/>}/>
       <Route path="/how-it-works" element={<Howitworks/>}/>
       <Route path="/survey" element={<Survey/>}/>
+      <Route path="/about" element={<StepForm/>} />
 
 
       </Routes>

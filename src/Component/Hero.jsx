@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../Component/Hero.module.css"
-import HealthyHeart from "../assets/Healthy_Heart.jpeg";
+import HealthyHeart from "../../public/assets/Healthy_Heart.jpeg";
 import { ArrowRight } from "lucide-react"
 export default function Hero(){
 const navigate = useNavigate();
