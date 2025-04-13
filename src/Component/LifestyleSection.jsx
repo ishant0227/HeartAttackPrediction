@@ -3,10 +3,49 @@ import styles from "../Component/From.module.css"
 export default function LifestyleSection({ formData, handleSelectChange, handleInputChange }) {
   return (
     <div className={styles.section}>
-      <h3 className={styles.sectionTitle}>Habits</h3>
+      <h3 className={styles.sectionTitle}>Habits & lifestyle</h3>
       <hr className={styles.divider} />
 
       <div className={styles.formGroup}>
+
+      <div className={styles.formRow}>
+          <div className={styles.formField}>
+            <label htmlFor="late_night_screen" className={styles.label}>
+            Do you watch screens (TV, mobile, OTT) till late night?
+            </label>
+            <select
+              id="late_night_screen"
+              value={formData.night_screen || ""}
+              className={styles.select}
+              onChange={(e) => handleSelectChange("late_night_screen", e.target.value)}
+            >
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="Sometimes">Sometime</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+
+          
+          <div className={styles.formField}>
+            <label htmlFor="late_food" className={styles.label}>
+            Do you usually eat heavy or junk food late at night?
+            </label>
+            <select
+              id="late_food"
+              value={formData.late_food || ""}
+              className={styles.select}
+              onChange={(e) => handleSelectChange("late_food", e.target.value)}
+            >
+              <option value="">Select</option>
+              <option value="Often">Often</option>
+              <option value="Sometimes">Sometimes</option>
+              <option value="Rarely">Rarely</option>
+              <option value="Never">Never</option>
+            </select>
+          </div>
+        </div>
+        
         {/* Smoking */}
         <div className={styles.formRow}>
           <div className={styles.formField}>
@@ -45,6 +84,8 @@ export default function LifestyleSection({ formData, handleSelectChange, handleI
             </select>
           </div>
         </div>
+
+        
 
         {/* Alcohol */}
         <div className={styles.formRow}>

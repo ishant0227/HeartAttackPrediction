@@ -98,6 +98,23 @@ export default function Stress({ formData, handleSelectChange }) {
           </div>
         </div>
 
+        <div className={styles.formField}>
+            <label className={styles.label}>
+            On average, how quickly do you fall asleep after lying in bed?
+              </label>
+            <select
+              value={formData.fall_asleep || ""}
+              className={styles.select}
+              onChange={(e) => handleSelectChange("fall_asleep", e.target.value)}
+            >
+              <option>Select</option>
+              <option>Less than 5 minutes</option>
+              <option> 5–15 minutes</option>
+              <option>15–30 minutes</option>
+              <option>More than 30 minutes</option>
+            </select>
+          </div>
+
         <div className={styles.formRow}>
           <div className={styles.formField}>
             <label className={styles.label}>Have you lost interest in hobbies or activities you used to enjoy?</label>

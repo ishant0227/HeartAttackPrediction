@@ -7,7 +7,7 @@ import Diet from "../Component/Diet"
 import ExerciseSection from "../Component/ExerciseSection"
 import LifestyleSection from "../Component/LifestyleSection"
 
-export default function Form() {
+export default function Survey() {
   const [currentSection, setCurrentSection] = useState(0)
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
@@ -91,10 +91,11 @@ export default function Form() {
     <div className={styles.container}>
       <div className={styles.card}>
         <div className={styles.cardHeader}>
-          <h2 className={styles.cardTitle}>Health Assessment Questionnaire</h2>
+          <h2 className={styles.cardTitle}>Health Survey</h2>
           <p className={styles.cardDescription}>
-            Please complete all sections to receive your personalized health insights
+            Please complete all sections of Surevy
           </p>
+          <marquee><p>📝 Please Provide Honest Information!!!⚠️ 🙏 Help Us Help You </p></marquee>
         </div>
         <div className={styles.cardContent}>
           <div className={styles.progressNav}>

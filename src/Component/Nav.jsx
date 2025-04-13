@@ -28,7 +28,7 @@ export default function Nav({ isOpen }) {
       >
         How It Works
       </NavLink>
-      <NavLink to="/Form" className={styles.navlink}>
+      <NavLink to="/Survey" className={styles.navlink}>
         Survey
       </NavLink>
       <NavLink   to="/login" className={styles.navlink} onClick={(e) => {
