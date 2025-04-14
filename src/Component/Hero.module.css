@@ -59,10 +59,27 @@
   text-align: center;
 }
 
+.surveybutton:hover,
 .ctabutton:hover,
 .secondarybutton:hover {
-  background-color: aliceblue;
+  background-color: azure;
 }
+
+.surveybutton{
+    width: 100%;
+    max-width: 220px;
+    height: 45px;
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    padding: 10px;
+    cursor:pointer ;
+    transition: background 0.3s ease;
+    background-color: inherit;
+    text-align: center;
+  }
+
+
 
 .buttonicon {
   margin-left: 0.5rem;

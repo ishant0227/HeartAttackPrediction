@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styles from "../Component/Hero.module.css"
-import HealthyHeart from "../../public/assets/Healthy_Heart.jpeg";
+import HealthyHeart from "../assets/Healthy_Heart.jpeg";
 import { ArrowRight } from "lucide-react"
 export default function Hero(){
 const navigate = useNavigate();
@@ -17,6 +17,7 @@ const navigate = useNavigate();
                 Take a quick assessment based on your lifestyle and medical factors to evaluate your heart attack risk.
               </p>
               <div className={styles.herobuttons}>
+                <button onClick={()=> navigate("/Survey")}  className={styles.surveybutton}>Fill a survey</button>
                 <button disabled onClick={()=> navigate("/Form")}   className={styles.ctabutton}>
                   Get Started
                   <ArrowRight className={styles.buttonicon} />

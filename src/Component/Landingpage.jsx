@@ -1,10 +1,10 @@
-import Header from "./Header";
 import styles from "../Component/Landingpage.module.css"
 import Hero from "./Hero";
 import Howitworks from "./How_It_Works";
 import Testimonials from "./Testimonials";
 import CTA from "./CTA";
 import Footer from "./Footer";
+import heartIcon from "../assets/heart_icon.png";
 
 
 
@@ -12,7 +12,16 @@ import Footer from "./Footer";
 export default function Landingpage(){
     return(
 
-      <div className={styles.bg}>
+      <div styles={{
+        backgroundImage:`url(${heartIcon})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        height:"100vh",
+        padding: "0%",
+        backgroundRepeat: "no-repeat",
+        overflow: "auto",
+        
+      }}>
             <div className={styles.pagecontainer}>
             
             <div id="hero"><Hero/></div> 

@@ -397,6 +397,8 @@ export default function Diet({formData, handleSelectChange}){
                 <option value="more_than_4">More than 4 times a week</option>
                 <option value="2_3_week">2-3 times a week</option>
                 <option value="once_week">Once a week</option>
+                <option value="once_month">Once a Month</option>
+                <option value="Never">Never</option>
             </select>
             </div>
             <div className={styles.formRow}>

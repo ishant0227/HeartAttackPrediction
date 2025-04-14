@@ -187,7 +187,7 @@ export default function Survey() {
 
                     <div className={styles.formField}>
                       <label htmlFor="weight" className={styles.label}>
-                        What is your weight ?(in kgs)
+                        What is your weight ?(in kgs only)
                       </label>
                       <input
                         id="weigth"
@@ -204,7 +204,7 @@ export default function Survey() {
                     <div className={styles.formRow}>
                     <div className={styles.formField}>
                       <label htmlFor="height" className={styles.label}>
-                        What is your Height?(in cm)
+                        What is your Height?(in cm only)
                       </label>
                       <input
                         id="height"
@@ -218,7 +218,7 @@ export default function Survey() {
                     </div>
                     <div className={styles.formField}>
                       <label htmlFor="bmi" className={styles.label}>
-                        What is your BMI?(Body Mass Index)
+                      Your BMI Is (Body Mass Index)
                       </label>
                       <input
                         id="bmi"
