@@ -121,122 +121,129 @@ export default function Survey() {
                 <h3 className={styles.sectionTitle}>Basic Information</h3>
                 <hr className={styles.divider} />
 
-                <div className={styles.formGroup}>
-                  <div className={styles.formRow}>
-                    <div className={styles.formField}>
-                    <label htmlFor="name" className={styles.label}>
-                        Enter Your Full Name:
-                      </label>
-                      <input
-                        id="name"
-                        name="name"
-                        type="text"
-                        placeholder="Enter your Full Name"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                        required
-                      />
-                      </div>
-                      <div className={styles.formField}>
-                      <label htmlFor="email" className={styles.label}>
-                        Enter Your Email Address:
-                      </label>
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        placeholder="Enter your Email"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                        required
-                      />
-                      </div>
-                      </div>
+                  <div className={styles.formGroup}>
+                                  <div className={styles.formRow}>
+                                    <div className={styles.formField}>
+                                    <label htmlFor="name" className={styles.label}>
+                                        Enter Your Full Name:
+                                      </label>
+                                      <input
+                                        id="name"
+                                        name="name"
+                                        value={formData.name || ""}
+                                        type="text"
+                                        placeholder="Enter your Full Name"
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                      />
+                                      </div>
+                                      <div className={styles.formField}>
+                                      <label htmlFor="email" className={styles.label}>
+                                        Enter Your Email Address:
+                                      </label>
+                                      <input
+                                        id="email"
+                                        name="email"
+                                        value={formData.email || ""}
+                                        type="email"
+                                        placeholder="Enter your Email"
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                      />
+                                      </div>
+                                      </div>
+                
+                                      <div className={styles.formField}>
+                                      <label htmlFor="email" className={styles.label}>
+                                        Enter Your Profession?
+                                      </label>
+                                      <input
+                                        id="profession"
+                                        name="profession"
+                                        value={formData.profession || ""}
+                                        type="text"
+                                        placeholder="Enter your Profession"
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                      />
+                                      </div>
+                                      
+                
+                                      <div className={styles.formRow}>
+                                      <div className={styles.formField}>
+                                      <label htmlFor="age" className={styles.label}>
+                                        What is your age?
+                                      </label>
+                                      <input
+                                        id="age"
+                                        name="age"
+                                        value={formData.age || ""}
+                                        type="number"
+                                        placeholder="Enter your age"
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                      />
+                                      </div>
+                
+                                    <div className={styles.formField}>
+                                      <label htmlFor="weight" className={styles.label}>
+                                        What is your weight ? (in kgs only)
+                                      </label>
+                                      <input
+                                        id="weigth"
+                                        name="weight"
+                                        value={formData.weight || ""}
+                                        type="number"
+                                        placeholder="Enter in kg"
+                                        onChange={handleInputChange}
+                                       className={styles.input}
+                                        required
+                                      />
+                                    </div>
+                                    </div>
+                
+                                    <div className={styles.formRow}>
+                                    <div className={styles.formField}>
+                                      <label htmlFor="height" className={styles.label}>
+                                        What is your Height? (in cm only)
+                                      </label>
+                                      <input
+                                        id="height"
+                                        name="height"
+                                        type="number"
+                                        value={formData.height || ""}
+                                        placeholder="Enter your height in cm"
+                                        onChange={handleInputChange}
+                                        className={styles.input}
+                                        required
+                                      />
+                                    </div>
+                                    <div className={styles.formField}>
+                                      <label htmlFor="bmi" className={styles.label}>
+                                        Your BMI is?(Body Mass Index)
+                                      </label>
+                                      <input
+                                        id="bmi"
+                                        name="bmi"
+                                        type="number"
+                                        value={formData.bmi}
+                                        step="0.01"
+                                        placeholder="Enter your BMI"
+                                        readOnly
+                                        disabled
+                                        className={styles.input}
+                                      />
+                                    </div>
+                                  </div>
+                
+                                </div>
+                              </div>
+                            )}
 
-                      <div className={styles.formField}>
-                      <label htmlFor="email" className={styles.label}>
-                        Enter Your Profession?
-                      </label>
-                      <input
-                        id="profession"
-                        name="profession"
-                        type="text"
-                        placeholder="Enter your Profession"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                        required
-                      />
-                      </div>
-                      
-
-                      <div className={styles.formRow}>
-                      <div className={styles.formField}>
-                      <label htmlFor="age" className={styles.label}>
-                        What is your age?
-                      </label>
-                      <input
-                        id="age"
-                        name="age"
-                        type="number"
-                        placeholder="Enter your age"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                        required
-                      />
-                      </div>
-
-                    <div className={styles.formField}>
-                      <label htmlFor="weight" className={styles.label}>
-                        What is your weight ?(in kgs only)
-                      </label>
-                      <input
-                        id="weigth"
-                        name="weight"
-                        type="number"
-                        placeholder="Enter in kg"
-                        onChange={handleInputChange}
-                       className={styles.input}
-                        required
-                      />
-                    </div>
-                    </div>
-
-                    <div className={styles.formRow}>
-                    <div className={styles.formField}>
-                      <label htmlFor="height" className={styles.label}>
-                        What is your Height?(in cm only)
-                      </label>
-                      <input
-                        id="height"
-                        name="height"
-                        type="number"
-                        placeholder="Enter your height in cm"
-                        onChange={handleInputChange}
-                        className={styles.input}
-                        required
-                      />
-                    </div>
-                    <div className={styles.formField}>
-                      <label htmlFor="bmi" className={styles.label}>
-                      Your BMI Is (Body Mass Index)
-                      </label>
-                      <input
-                        id="bmi"
-                        name="bmi"
-                        type="number"
-                        value={formData.bmi}
-                        step="0.01"
-                        placeholder="Enter your BMI"
-                        readOnly
-                        disabled
-                        className={styles.input}
-                      />
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-            )}
             {currentSection === 1 && (
               <div className={styles.section}>       
                 <div className={styles.formGroup}>

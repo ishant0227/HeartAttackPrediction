@@ -129,6 +129,7 @@ export default function Form() {
                       <input
                         id="name"
                         name="name"
+                        value={formData.name || ""}
                         type="text"
                         placeholder="Enter your Full Name"
                         onChange={handleInputChange}
@@ -143,6 +144,7 @@ export default function Form() {
                       <input
                         id="email"
                         name="email"
+                        value={formData.email || ""}
                         type="email"
                         placeholder="Enter your Email"
                         onChange={handleInputChange}
@@ -159,6 +161,7 @@ export default function Form() {
                       <input
                         id="profession"
                         name="profession"
+                        value={formData.profession || ""}
                         type="text"
                         placeholder="Enter your Profession"
                         onChange={handleInputChange}
@@ -176,6 +179,7 @@ export default function Form() {
                       <input
                         id="age"
                         name="age"
+                        value={formData.age || ""}
                         type="number"
                         placeholder="Enter your age"
                         onChange={handleInputChange}
@@ -191,6 +195,7 @@ export default function Form() {
                       <input
                         id="weigth"
                         name="weight"
+                        value={formData.weight || ""}
                         type="number"
                         placeholder="Enter in kg"
                         onChange={handleInputChange}
@@ -209,6 +214,7 @@ export default function Form() {
                         id="height"
                         name="height"
                         type="number"
+                        value={formData.height || ""}
                         placeholder="Enter your height in cm"
                         onChange={handleInputChange}
                         className={styles.input}

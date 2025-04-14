@@ -7,12 +7,12 @@ export default function Diet({formData, handleSelectChange}){
 
         <div className={styles.formGroup}>
         <div className={styles.formField}>
-        <div className={styles.formField}>
           <label htmlFor="diet_preference" className={styles.label}>
                               What is your dietary preference?
                             </label>
                             <select
                               id="diet_preference"
+                              value={formData.diet_preference || ""}
                               className={styles.select}
                               onChange={(e) => handleSelectChange("diet_preference", e.target.value)}
                               
@@ -32,6 +32,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="fresh_fruits"
+                                value={formData.fresh_fruits || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("fresh_fruits", e.target.value)}
                                 
@@ -50,6 +51,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="leafy_greens"
+                                value={formData.leafy_greens || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("leafy_greens", e.target.value)}
                                  
@@ -70,6 +72,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="other_vegetables"
+                                value={formData.other_vegetables || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("other_vegetables", e.target.value)}
                                 
@@ -88,6 +91,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="whole_grains"
+                                value={formData.whole_grains || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("whole_grains", e.target.value)}
                                  
@@ -108,6 +112,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="legumes"
+                                value={formData.legumes || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("legumes", e.target.value)}
                                  
@@ -126,6 +131,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="nuts_seeds"
+                                value={formData.nuts_seeds || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("nuts_seeds", e.target.value)}
                                  
@@ -146,6 +152,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="dairy"
+                                value={formData.dairy || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("dairy", e.target.value)}
                                  
@@ -165,6 +172,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="healthy_oils"
+                                value={formData.healthy_oils || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("healthy_oils", e.target.value)}
                                  
@@ -187,6 +195,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="sugary_foods"
+                                value={formData.sugary_foods || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("sugary_foods", e.target.value)}
                                  
@@ -205,6 +214,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="processed_foods"
+                                value={formData.processed_foods || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("processed_foods", e.target.value)}
                                  
@@ -225,6 +235,7 @@ export default function Diet({formData, handleSelectChange}){
                               </label>
                               <select
                                 id="high_salt_foods"
+                                value={formData.high_salt_foods || ""}
                                 className={styles.select}
                                 onChange={(e) => handleSelectChange("high_salt_foods", e.target.value)}
                                  
@@ -250,6 +261,7 @@ export default function Diet({formData, handleSelectChange}){
                                   </label>
                                   <select
                                     id="eggs"
+                                    value={formData.eggs || ""}
                                     className={styles.select}
                                     onChange={(e) => handleSelectChange("eggs", e.target.value)}
                                      
@@ -268,6 +280,7 @@ export default function Diet({formData, handleSelectChange}){
                                   </label>
                                   <select
                                     id="chicken"
+                                    value={formData.chicken || ""}
                                     className={styles.select}
                                     onChange={(e) => handleSelectChange("chicken", e.target.value)}
                                      
@@ -288,6 +301,7 @@ export default function Diet({formData, handleSelectChange}){
                                   </label>
                                   <select
                                     id="fish"
+                                    value={formData.fish || ""}
                                     className={styles.select}
                                     onChange={(e) => handleSelectChange("fish", e.target.value)}
                                      
@@ -310,6 +324,7 @@ export default function Diet({formData, handleSelectChange}){
                                   </label>
                                   <select
                                     id="fried_meat"
+                                    value={formData.fried_meat || ""}
                                     className={styles.select}
                                     onChange={(e) => handleSelectChange("fried_meat", e.target.value)}
                                      
@@ -330,6 +345,7 @@ export default function Diet({formData, handleSelectChange}){
                                   </label>
                                   <select
                                     id="processed_meat"
+                                    value={formData.processed_meat || ""}
                                     className={styles.select}
                                     onChange={(e) => handleSelectChange("processed_meat", e.target.value)}
                                      
@@ -348,6 +364,7 @@ export default function Diet({formData, handleSelectChange}){
                                   </label>
                                   <select
                                     id="cream_dishes"
+                                    value={formData.cream_dishes || ""}
                                     className={styles.select}
                                     onChange={(e) => handleSelectChange("cream_dishes", e.target.value)}
                                      
@@ -370,6 +387,7 @@ export default function Diet({formData, handleSelectChange}){
             </label>
             <select
                 id="food_preparation"
+                value={formData.food_preparation || ""}
                 className={styles.select}
                 onChange={(e) => handleSelectChange("food_preparation", e.target.value)}
 
@@ -389,6 +407,7 @@ export default function Diet({formData, handleSelectChange}){
             </label>
             <select
                 id="eating_out"
+                value={formData.eating_out || ""}
                 className={styles.select}
                 onChange={(e) => handleSelectChange("eating_out", e.target.value)}
 
@@ -398,7 +417,7 @@ export default function Diet({formData, handleSelectChange}){
                 <option value="2_3_week">2-3 times a week</option>
                 <option value="once_week">Once a week</option>
                 <option value="once_month">Once a Month</option>
-                <option value="Never">Never</option>
+                <option value="never">Never</option>
             </select>
             </div>
             <div className={styles.formRow}>
@@ -408,6 +427,7 @@ export default function Diet({formData, handleSelectChange}){
                 </label>
                 <select
                     id="extra_salt"
+                    value={formData.extra_salt || ""}
                     className={styles.select}
                     onChange={(e) => handleSelectChange("extra_salt", e.target.value)}
 
@@ -420,7 +440,6 @@ export default function Diet({formData, handleSelectChange}){
             </div>
         </div>
     </div>
-</div>
 </div>
 </div>
     )
