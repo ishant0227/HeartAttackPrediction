@@ -38,10 +38,10 @@ export default function Diet({formData, handleSelectChange}){
                                 
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
         
@@ -57,10 +57,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
                           </div>
@@ -78,10 +78,10 @@ export default function Diet({formData, handleSelectChange}){
                                 
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
         
@@ -97,10 +97,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
                           </div>
@@ -118,10 +118,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
         
@@ -137,10 +137,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
                           </div>
@@ -158,10 +158,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
         
@@ -178,10 +178,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
                           </div>
@@ -201,10 +201,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
         
@@ -220,10 +220,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
                           </div>
@@ -241,10 +241,10 @@ export default function Diet({formData, handleSelectChange}){
                                  
                               >
                                 <option >Select</option>
-                                <option value="daily">Daily</option>
-                                <option value="weekly">Weekly</option>
-                                <option value="rarely">Rarely</option>
-                                <option value="never">Never</option>
+                                <option value="0">Daily</option>
+                                <option value="1">Weekly</option>
+                                <option value="2">Rarely</option>
+                                <option value="3">Never</option>
                               </select>
                             </div>
                           </div>
@@ -267,10 +267,10 @@ export default function Diet({formData, handleSelectChange}){
                                      
                                   >
                                     <option >Select</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="rarely">Rarely</option>
-                                    <option value="never">Never</option>
+                                    <option value="0">Daily</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Rarely</option>
+                                    <option value="3">Never</option>
                                   </select>
                                 </div>
         
@@ -286,10 +286,10 @@ export default function Diet({formData, handleSelectChange}){
                                      
                                   >
                                     <option >Select</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="rarely">Rarely</option>
-                                    <option value="never">Never</option>
+                                    <option value="0">Daily</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Rarely</option>
+                                    <option value="3">Never</option>
                                   </select>
                                 </div>
                               </div>
@@ -307,10 +307,10 @@ export default function Diet({formData, handleSelectChange}){
                                      
                                   >
                                     <option >Select</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="rarely">Rarely</option>
-                                    <option value="never">Never</option>
+                                    <option value="0">Daily</option>
+                                    <option value="1">Weekly</option>
+                                    <option value="2">Rarely</option>
+                                    <option value="3">Never</option>
                                   </select>
                                 </div>
                               </div>
@@ -330,10 +330,10 @@ export default function Diet({formData, handleSelectChange}){
                                      
                                   >
                                     <option >Select</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="rarely">Rarely</option>
-                                    <option value="never">Never</option>
+                                    <option value="3">Daily</option>
+                                    <option value="2">Weekly</option>
+                                    <option value="1">Rarely</option>
+                                    <option value="0">Never</option>
                                   </select>
                                 </div>
                               </div>
@@ -351,10 +351,10 @@ export default function Diet({formData, handleSelectChange}){
                                      
                                   >
                                     <option >Select</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="rarely">Rarely</option>
-                                    <option value="never">Never</option>
+                                    <option value="3">Daily</option>
+                                    <option value="2">Weekly</option>
+                                    <option value="1">Rarely</option>
+                                    <option value="0">Never</option>
                                   </select>
                                 </div>
         
@@ -370,10 +370,10 @@ export default function Diet({formData, handleSelectChange}){
                                      
                                   >
                                     <option >Select</option>
-                                    <option value="daily">Daily</option>
-                                    <option value="weekly">Weekly</option>
-                                    <option value="rarely">Rarely</option>
-                                    <option value="never">Never</option>
+                                    <option value="3">Daily</option>
+                                    <option value="2">Weekly</option>
+                                    <option value="1">Rarely</option>
+                                    <option value="0">Never</option>
                                   </select>
                                 </div>
                               </div>
@@ -393,10 +393,10 @@ export default function Diet({formData, handleSelectChange}){
 
             >
                 <option>Select</option>
-                <option value="Balanced_diet">Balanced of all</option>
-                <option value="boiled">Mostly boiled/steamed</option>
-                <option value="grilled">Mostly grilled/roasted</option>
-                <option value="fried">Mostly fried/heavy oil-based</option>
+                <option value="0">Balanced of all</option>
+                <option value="1">Mostly boiled/steamed</option>
+                <option value="2">Mostly grilled/roasted</option>
+                <option value="3">Mostly fried/heavy oil-based</option>
 
             </select>
         </div>
@@ -413,11 +413,11 @@ export default function Diet({formData, handleSelectChange}){
 
             >
                 <option>Select</option>
-                <option value="more_than_4">More than 4 times a week</option>
-                <option value="2_3_week">2-3 times a week</option>
-                <option value="once_week">Once a week</option>
-                <option value="once_month">Once a Month</option>
-                <option value="never">Never</option>
+                <option value="4">More than 4 times a week</option>
+                <option value="3">2-3 times a week</option>
+                <option value="2">Once a week</option>
+                <option value="1">Once a Month</option>
+                <option value="0">Never</option>
             </select>
             </div>
             <div className={styles.formRow}>
@@ -433,9 +433,9 @@ export default function Diet({formData, handleSelectChange}){
 
                 >
                     <option>Select</option>
-                    <option value="regularly">Yes, regularly</option>
-                    <option value="occasionally">Occasionally</option>
-                    <option value="no">No</option>
+                    <option value="2">Yes, regularly</option>
+                    <option value="1">Occasionally</option>
+                    <option value="0">No</option>
                 </select>
             </div>
         </div>

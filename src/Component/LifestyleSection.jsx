@@ -15,14 +15,14 @@ export default function LifestyleSection({ formData, handleSelectChange, handleI
             </label>
             <select
               id="late_night_screen"
-              value={formData.night_screen || ""}
+              value={formData.late_night_screen || ""}
               className={styles.select}
               onChange={(e) => handleSelectChange("late_night_screen", e.target.value)}
             >
               <option value="">Select</option>
-              <option value="yes">Yes</option>
-              <option value="Sometimes">Sometime</option>
-              <option value="No">No</option>
+              <option value="2">Yes</option>
+              <option value="1">Sometime</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -38,10 +38,10 @@ export default function LifestyleSection({ formData, handleSelectChange, handleI
               onChange={(e) => handleSelectChange("late_food", e.target.value)}
             >
               <option value="">Select</option>
-              <option value="Often">Often</option>
-              <option value="Sometimes">Sometimes</option>
-              <option value="Rarely">Rarely</option>
-              <option value="Never">Never</option>
+              <option value="3">Often</option>
+              <option value="2">Sometimes</option>
+              <option value="1">Rarely</option>
+              <option value="0">Never</option>
             </select>
           </div>
         </div>
@@ -59,10 +59,10 @@ export default function LifestyleSection({ formData, handleSelectChange, handleI
               onChange={(e) => handleSelectChange("smoking_habit", e.target.value)}
             >
               <option value="">Select</option>
-              <option value="none">I don’t smoke</option>
-              <option value="1-2">1–2</option>
-              <option value="3-5">3–5</option>
-              <option value="more_than_5">More than 5</option>
+              <option value="0">I don’t smoke</option>
+              <option value="1">1–2</option>
+              <option value="2">3–5</option>
+              <option value="3">More than 5</option>
             </select>
           </div>
 
@@ -78,9 +78,9 @@ export default function LifestyleSection({ formData, handleSelectChange, handleI
               onChange={(e) => handleSelectChange("tobacco", e.target.value)}
             >
               <option value="">Select</option>
-              <option value="never">Never</option>
-              <option value="occasionally">Occasionally</option>
-              <option value="daily">Daily</option>
+              <option value="0">Never</option>
+              <option value="1">Occasionally</option>
+              <option value="2">Daily</option>
             </select>
           </div>
         </div>
@@ -100,10 +100,10 @@ export default function LifestyleSection({ formData, handleSelectChange, handleI
               onChange={(e) => handleSelectChange("alcohol", e.target.value)}
             >
               <option value="">Select</option>
-              <option value="never">Never</option>
-              <option value="occasionally">Occasionally</option>
-              <option value="weekly">Weekly</option>
-              <option value="daily">Daily</option>
+              <option value="0">Never</option>
+              <option value="1">Occasionally</option>
+              <option value="2">Weekly</option>
+              <option value="3">Daily</option>
             </select>
           </div>
         </div>

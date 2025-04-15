@@ -18,9 +18,9 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_anxious", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>Sometimes</option>
-              <option>No</option>
+              <option value="2">Yes</option>
+              <option value="1">Sometimes</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -32,8 +32,8 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_family_stress", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="0" >No</option>
             </select>
           </div>
         </div>
@@ -47,9 +47,9 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_exhausted", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>Sometimes</option>
-              <option>No</option>
+              <option value="2">Yes</option>
+              <option value="1">Sometimes</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -61,10 +61,10 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_anger", e.target.value)}
             >
               <option>Select</option>
-              <option>Often</option>
-              <option>Sometimes</option>
-              <option>Rarely</option>
-              <option>Never</option>
+              <option value="3">Often</option>
+              <option value="2">Sometimes</option>
+              <option value="1">Rarely</option>
+              <option value="0" >Never</option>
             </select>
           </div>
         </div>
@@ -78,9 +78,9 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_sleep", e.target.value)}
             >
               <option>Select</option>
-              <option>Always</option>
-              <option>Sometimes</option>
-              <option>Never</option>
+              <option value="0">Always</option>
+              <option value="1">Sometimes</option>
+              <option value="2">Never</option>
             </select>
           </div>
 
@@ -92,8 +92,8 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_relax", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
             </select>
           </div>
         </div>
@@ -108,24 +108,25 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("fall_asleep", e.target.value)}
             >
               <option>Select</option>
-              <option>Less than 5 minutes</option>
-              <option> 5–15 minutes</option>
-              <option>15–30 minutes</option>
-              <option>More than 30 minutes</option>
+              <option value="0">Less than 5 minutes</option>
+              <option value="1"> 5–15 minutes</option>
+              <option value="2">15–30 minutes</option>
+              <option value="3" >More than 30 minutes</option>
             </select>
           </div>
 
         <div className={styles.formRow}>
           <div className={styles.formField}>
-            <label className={styles.label}>Have you lost interest in hobbies or activities you used to enjoy?</label>
+            <label className={styles.label}>Have you feel lost interest in hobbies or activities you used to enjoy?</label>
             <select
               value={formData.mental_interest_loss || ""}
               className={styles.select}
               onChange={(e) => handleSelectChange("mental_interest_loss", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="2">Yes</option>
+              <option value="1"> Sometimes</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -137,23 +138,24 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_major_event", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
             </select>
           </div>
         </div>
 
         <div className={styles.formRow}>
           <div className={styles.formField}>
-            <label className={styles.label}>Do you often feel hopeless or like nothing will get better?</label>
+            <label className={styles.label}>Do you feel hopeless or like nothing will get better?</label>
             <select
               value={formData.mental_hopeless || ""}
               className={styles.select}
               onChange={(e) => handleSelectChange("mental_hopeless", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="2">Yes</option>
+              <option value="1"> Sometimes</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -165,9 +167,9 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("mental_bodypain", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>Sometimes</option>
-              <option>No</option>
+              <option value="2">Yes</option>
+              <option value="1"> Sometimes</option>
+              <option value="0">No</option>
             </select>
           </div>
         </div>
@@ -183,9 +185,9 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_heavy_work", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>Sometimes</option>
-              <option>No</option>
+              <option value="2">Yes</option>
+              <option value="1">Sometimes</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -197,10 +199,10 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_tired", e.target.value)}
             >
               <option>Select</option>
-              <option>Often</option>
-              <option>Sometimes</option>
-              <option>Rarely</option>
-              <option>Never</option>
+              <option value="3">Often</option>
+              <option value="2">Sometimes</option>
+              <option value="1" >Rarely</option>
+              <option value="0">Never</option>
             </select>
           </div>
         </div>
@@ -214,8 +216,8 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_rest", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="0">Yes</option>
+              <option value="1">No</option>
             </select>
           </div>
 
@@ -227,8 +229,8 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_less_sleep", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
             </select>
           </div>
         </div>
@@ -242,8 +244,8 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_pain_breath", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
             </select>
           </div>
 
@@ -255,10 +257,10 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_lazy", e.target.value)}
             >
               <option>Select</option>
-              <option>Often</option>
-              <option>Sometimes</option>
-              <option>Rarely</option>
-              <option>Never</option>
+              <option value="3">Often</option>
+              <option value="2">Sometimes</option>
+              <option value="1">Rarely</option>
+              <option value="0">Never</option>
             </select>
           </div>
         </div>
@@ -272,8 +274,8 @@ export default function Stress({ formData, handleSelectChange }) {
               onChange={(e) => handleSelectChange("physical_continue_work", e.target.value)}
             >
               <option>Select</option>
-              <option>Yes</option>
-              <option>No</option>
+              <option value="1">Yes</option>
+              <option value="0">No</option>
             </select>
           </div>
         </div>

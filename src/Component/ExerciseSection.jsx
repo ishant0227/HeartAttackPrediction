@@ -19,10 +19,10 @@ export default function ExerciseSection({ formData, handleSelectChange }){
           onChange={(e) => handleSelectChange("moderate_cardio", e.target.value)}
         >
           <option>Select</option>
-          <option value="150_plus">150+ min per week</option>
-          <option value="75_149">75–149 min per week</option>
-          <option value="less_than_75">Less than 75 min per week</option>
-          <option value="never">Never</option>
+          <option value="0">150+ min per week</option>
+          <option value="1">75–149 min per week</option>
+          <option value="2">Less than 75 min per week</option>
+          <option value="3">Never</option>
         </select>
       </div>
 
@@ -37,10 +37,10 @@ export default function ExerciseSection({ formData, handleSelectChange }){
           onChange={(e) => handleSelectChange("vigorous_cardio", e.target.value)}
         >
           <option>Select</option>
-          <option value="75_plus">75+ min per week</option>
-          <option value="30_74">30–74 min per week</option>
-          <option value="less_than_30">Less than 30 min per week</option>
-          <option value="never">Never</option>
+          <option value="0">75+ min per week</option>
+          <option value="1">30–74 min per week</option>
+          <option value="2">Less than 30 min per week</option>
+          <option value="3">Never</option>
         </select>
       </div>
 
@@ -55,9 +55,9 @@ export default function ExerciseSection({ formData, handleSelectChange }){
           onChange={(e) => handleSelectChange("strength_training", e.target.value)}
         >
           <option>Select</option>
-          <option value="3_plus">3+ times per week</option>
-          <option value="1_2">1–2 times per week</option>
-          <option value="rarely">Rarely/Never</option>
+          <option value="0">3+ times per week</option>
+          <option value="1">1–2 times per week</option>
+          <option value="2">Rarely/Never</option>
         </select>
       </div>
 
@@ -72,8 +72,8 @@ export default function ExerciseSection({ formData, handleSelectChange }){
           onChange={(e) => handleSelectChange("non_exercise", e.target.value)}
         >
           <option>Select</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
+          <option value="0">Yes</option>
+          <option value="1">No</option>
         </select>
       </div>
     </div>
