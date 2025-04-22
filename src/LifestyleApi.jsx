@@ -1,7 +1,7 @@
 import axios from 'axios';
 const heart = `65.2.29.15`;
-const URL = 'http://localhost:8080/api/lifestyle';
-const URL1 = 'http://localhost:5000';
+const URL = 'http://13.235.244.214:8080/api/lifestyle';
+
 
 //to send data to backend
 
@@ -29,6 +29,4 @@ export const addLifestyle = (data) => {
 
   }
 
-  export const riskresult = (data)=>{
-    return axios.get(`${URL1}/predict`, data)
-  };
+  

@@ -17,7 +17,7 @@ const [error, setError] = useState(null);
 useEffect(() => {
   const fetchRiskScores = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/get_risk_score');
+      const response = await axios.get('http://13.235.244.214:5000/get_risk_score');
       const { annScore, randomForestScore, riskScore } = response.data;
       console.log(response.data)
       setAnnScore(annScore);
