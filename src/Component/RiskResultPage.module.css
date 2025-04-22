@@ -1,0 +1,135 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.result {
+  margin-bottom: 20px;
+}
+
+.riskTitle {
+  color: #333;
+}
+
+.riskDescription {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.recommendations {
+  margin-top: 20px;
+}
+
+.recommendationItem {
+  margin-bottom: 8px;
+}
+
+.lipidProfile {
+  margin-top: 20px;
+}
+
+.toggleButton {
+  padding: 8px 16px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.toggleButton:hover {
+  background-color: #1565c0;
+}
+
+.lipidForm {
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.progressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.progressLabel {
+  font-size: 0.9rem;
+  color: #333;
+  width: 30px;
+  text-align: center;
+}
+
+.progressBar {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  appearance: none;
+  background-color: #e0e0e0;
+}
+
+.progressBar::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+.progressBar::-webkit-progress-value {
+  background-color: #4caf50; /* Default to green for low risk */
+  border-radius: 10px;
+}
+
+.progressBar[value="60"]::-webkit-progress-value {
+  background-color: #ff9800; /* Orange for moderate risk */
+}
+
+.progressBar[value="100"]::-webkit-progress-value {
+  background-color: #f44336; /* Red for high risk */
+}
+
+.riskPercentage {
+  margin-top: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+.progressWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.progressLabel {
+  font-size: 0.9rem;
+  color: #333;
+  width: 30px;
+  text-align: center;
+}
+
+.customProgressBar {
+  flex-grow: 1;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.filledBar {
+  height: 100%;
+  width: 0;
+  transition: width 0.6s ease-in-out;
+  border-radius: 10px 0 0 10px;
+}

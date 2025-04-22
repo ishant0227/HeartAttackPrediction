@@ -17,8 +17,8 @@ const navigate = useNavigate();
                 Take a quick assessment based on your lifestyle and medical factors to evaluate your heart attack risk.
               </p>
               <div className={styles.herobuttons}>
-                <button onClick={()=> navigate("/Survey")}  className={styles.surveybutton}>Fill a survey</button>
-                <button disabled onClick={()=> navigate("/Form")}   className={styles.ctabutton}>
+                
+                <button  onClick={()=> navigate("/Form")}   className={styles.ctabutton}>
                   Get Started
                   <ArrowRight className={styles.buttonicon} />
                 </button>

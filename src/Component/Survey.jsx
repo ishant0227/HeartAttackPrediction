@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {addLifestyle} from "../Lifestyle"
+import {addLifestyle} from "../LifestyleApi"
 import {useNavigate} from "react-router-dom"
 import styles from "../Component/From.module.css"
 import Stress from "../Component/Stress"

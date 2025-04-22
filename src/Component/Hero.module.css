@@ -53,13 +53,13 @@
   border-radius: 12px;
   font-size: 1rem;
   padding: 10px;
-  cursor: not-allowed;
+  cursor: pointer;
   transition: background 0.3s ease;
   background-color: inherit;
   text-align: center;
 }
 
-.surveybutton:hover,
+
 .ctabutton:hover,
 .secondarybutton:hover {
   background-color: azure;

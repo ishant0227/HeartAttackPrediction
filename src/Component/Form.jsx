@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import {addLifestyle} from "../Lifestyle"
+import {addLifestyle} from "../LifestyleApi"
 import {useNavigate} from "react-router-dom"
 import styles from "../Component/From.module.css"
 import Stress from "../Component/Stress"
@@ -76,7 +76,7 @@ export default function Form() {
         const resp = await addLifestyle(formData);
         console.log("Form submitted:", formData);
         alert("Form submitted successfully!");
-        navigate("/~thank");
+        navigate("/result");
       } catch (error) {
         console.error("Form not submitted:", error);
         alert("Form not submitted!!! Please try again.");
